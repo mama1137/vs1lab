@@ -24,6 +24,32 @@
     <main class="main">
         <section class="main__tagging tagging">
             <h2>Tagging</h2>
+            <fieldset>
+                <legend>Add a new GeoTag</legend>
+                <label for="latitude">Latitude:</label>
+                <input type="text" name="Latitude" size="10" id="latitude" placeholder="49.01379" readonly/>
+                <br>
+                <label for="longitude">Longitude:</label>
+                <input type="text" name="Longitude" size="10" id="longitude" placeholder="8.390071" readonly/>
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" name="Name" size="10" id="name" placeholder="e.g. Central Berlin" maxlength="10"/>
+                <br>
+                <label for="hashtag">Hashtag:</label>
+                <input type="text" name="Hashtag" size="10" id="hashtag" placeholder="e.g. #ber" maxlength="11" pattern="#[a-z]+"/>
+                <br>
+                <input type="submit" value="Add Tag">
+            </fieldset>
+
+            <fieldset>
+                <legend>Search</legend>
+                <label for="search">Search term or keywords:</label>
+                <input type="text" name="Search" size="10" id="search" placeholder="e.g. Berlin"/>
+                <br>
+                <input type="submit" value="Search">
+            </fieldset>
+
+
 
             <!-- ############### VS1Lab 1a Form 1 Start -->
             <form id="tag-form" action="/tagging" method="post">
